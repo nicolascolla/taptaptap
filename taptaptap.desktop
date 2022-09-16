@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Tap Tap Tap
+Exec=webapp-container --app-id="taptaptap.collaproductions" $@ www/index.html
+Icon=assets/logo.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true

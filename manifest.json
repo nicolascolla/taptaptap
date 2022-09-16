@@ -1,0 +1,15 @@
+{
+    "name": "taptaptap.collaproductions",
+    "description": "Every tap matters",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Tap Tap Tap",
+    "hooks": {
+        "taptaptap": {
+            "apparmor": "taptaptap.apparmor",
+            "desktop":  "taptaptap.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Nicolás Colla <nicolascolla@mail.ru>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}
