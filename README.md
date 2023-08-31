@@ -21,7 +21,26 @@ Clone this repository and build:
 ```
 $ git clone https://github.com/nicolascolla/taptaptap.git
 $ cd taptaptap
-$ clickable
+$ clickable build
+```
+
+### Building the app for 16.04
+
+Install [clickable](https://clickable-ut.dev/en/latest/install.html):
+
+```
+$ sudo add-apt-repository ppa:bhdouglass/clickable
+$ sudo apt-get install clickable
+```
+
+Clone this repository, change the framework and build:
+
+```
+$ git clone https://github.com/nicolascolla/taptaptap.git
+$ cd taptaptap
+$ sed -i 's/ubuntu-sdk-20.04/ubuntu-sdk-16.04.5/' clickable.yaml
+$ sed -i 's/20.04/16.04/' taptaptap.apparmor
+$ clickable build
 ```
 
 You can play the game on any web browser by opening taptaptap/www/index.html.
